@@ -21,3 +21,18 @@
 // console.log(message);
 
 
+let number = prompt("Введіть тризначне число:");
+
+let firstDigit = Math.floor(number / 100); 
+let secondDigit = Math.floor((number % 100) / 10); 
+let thirdDigit = number % 10; 
+
+if (firstDigit === secondDigit && secondDigit === thirdDigit) {
+  alert("Всі цифри однакові.");
+} else if (firstDigit === secondDigit || firstDigit === thirdDigit || secondDigit === thirdDigit) {
+  alert("Є однакові цифри.");
+} else {
+  alert("Цифри різні.");
+}
+
+
