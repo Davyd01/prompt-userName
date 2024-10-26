@@ -260,104 +260,6 @@
 // multiTable();
 
 
-
-
-// function number() {
-//   for (let i = 1; i <= 9; i++) {
-//     console.log(`${i * i}`);
-//   }
-// }
-// number()
-
-
-// let i = 1;
-// while (i <= 9) {
-//   console.log(`${i * i}`)
-//   i++;
-// }
-
-
-// let i = 1;
-// do {
-//   console.log(`${i * i}`);
-//   i++;
-// } while (i <= 9)
-
-
-// function number() {
-//   let result = "";
-//   for (let i = 10; i <= 20; i++) {
-//     result += i * i + (i < 20 ? ', ' : '');
-//   }
-//   console.log(result);
-    
-// }
-// number();
-
-
-
-// function number() {
-//   let sum = 0;
-//   for (let i = 1; i <= 15; i++) {
-//     sum += i
-//   }
-//   console.log(sum)
-// }
-// number()
-
-// function number() {
-//   let sum = 1;
-//   for (let i = 1; i <= 4; i++) {
-//     sum *= i
-//   }
-//   console.log(sum)
-// }
-// number()
-
-
-
-// function number() {
-//   let sum = 2;
-//   for (let i = 1; i <= 500; i++) {
-//     console.log(`${i / sum}`)
-    
-//   }
-// }
-// number()
-
-
-// function number() {
-//   let sum = 0;
-//   for (let i = 1; i <= 500; i++) {
-//     sum += i
-//   }
-//   console.log(sum / 500)
-// }
-// number()
-
-
-
-// function number() {
-//   let sum = 0;
-//   for (let i = 30; i <= 80; i++) {
-//     if (i % 2 == 1) continue;
-//     sum += i;
-//   }
-//   console.log(sum)
-// }
-// number()
-
-
-// function number() {
-//   for (let i = 100; i <= 200; i++) {
-//     if (i % 3 == 0)
-//     console.log(i)
-//   }
-// }
-// number()
-
-
-
 // function number() {
 //   for (let i = 2; i <= 10; i++ ) {
 //     for (let j = 1; j <= 10; j++) {
@@ -368,6 +270,27 @@
 // number()
 
 
+function primeNumber() {
+  let num = Number(prompt("Enter a number"));
 
+  if (num <= 1) {
+    alert(`Invalid number`);
+    return;
+  } 
+
+  let isPrime = true;
+    for(let i = 2; i < num; i++) {
+      if (num % i === 0) {
+        isPrime = false;
+        break;
+      }
+    }
+    if(isPrime) {
+      alert(`${num} is a prime number`)
+    } else {
+      alert(`${num} is not a prime number`)
+    }
+}
+primeNumber()
 
 
